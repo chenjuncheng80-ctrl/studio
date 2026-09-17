@@ -151,6 +151,7 @@
     if (e.status === 401) return "Token rejected (401). Check it is a fine-grained token with Contents: Read and write on this repo.";
     if (e.status === 403) return "Forbidden (403). The token is missing Contents: Read and write, or you hit a rate limit.";
     if (e.status === 404) return "Not found (404). Check owner / repository / branch.";
+    if (e.status === 422) return "Out of date (422). This repo moved since you loaded the page — reload and publish again.";
     return e.message || "Something went wrong.";
   }
 
