@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chan Chun Shing — Studio</title>
+<meta name="description" content="Portfolio and file studio of Chan Chun Shing (陳俊丞) — photography, video editing, motion and VFX." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/site.css" />
+<script>
+  // Set the shell language early so CJK copy never flashes in a fallback face.
+  try {
+    var l = localStorage.getItem("ccs-studio-lang");
+    if (!l) l = /^zh/i.test(navigator.language || "") ? "zh" : "en";
+    document.documentElement.lang = l === "zh" ? "zh-Hant" : "en";
+  } catch (e) {}
+</script>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top">
+    <span class="nav__mark">CC</span>
+    <span class="nav__name" data-i18n="Chan Chun Shing">Chan Chun Shing</span>
+  </a>
+  <nav class="nav__links">
+    <a href="#works" data-i18n="Works">Works</a>
+    <a href="#about" data-i18n="About">About</a>
+    <a href="#files" data-i18n="Files">Files</a>
+    <a href="#contact" data-i18n="Contact">Contact</a>
+  </nav>
+  <div class="nav__tools">
+    <button class="lang" id="langBtn" type="button" aria-label="Switch language">
+      <span class="lang__opt is-on" data-lang="en">EN</span>
+      <span class="lang__opt" data-lang="zh">中</span>
+    </button>
+    <a class="nav__admin" href="admin.html" data-i18n="Admin">Admin</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <p class="hero__eyebrow reveal">
+      <span data-i18n="Digital Media &amp; Street Photography">Digital Media &amp; Street Photography</span>
+      <span class="hero__dot">·</span>
+      <span data-profile="location">Sha Tin, Hong Kong</span>
+    </p>
+    <h1 class="hero__title reveal">
+      <span class="hero__line" data-profile="name">Chan Chun Shing</span>
+      <span class="hero__line hero__line--alt" data-profile="nameAlt">陳俊丞</span>
+    </h1>
+    <p class="hero__role reveal" data-profile="role">Digital Media Student &amp; Street Photographer</p>
+    <p class="hero__tagline reveal" data-profile="tagline"></p>
+    <div class="hero__actions reveal">
+      <a class="btn btn--solid" href="#works" data-i18n="See the work">See the work</a>
+      <a class="btn" id="heroResume" href="#" data-i18n="Download resume">Download resume</a>
+    </div>
+    <p class="hero__avail reveal" data-profile="available">Available from 25 May 2026</p>
+  </section>
+
+  <!-- ===== Works ===== -->
+  <section class="section" id="works">
+    <div class="section__head">
+      <h2 class="section__title" data-i18n="Works">Works</h2>
+      <div class="filters" id="filters"></div>
+    </div>
+    <div class="grid" id="grid">
+      <p class="empty" data-i18n="Loading…">Loading…</p>
+    </div>
+    <p class="empty is-hidden" id="worksEmpty" data-i18n="No work in this category yet.">No work in this category yet.</p>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section section--alt" id="about">
+    <div class="section__head">
+      <h2 class="section__title" data-i18n="About">About</h2>
+    </div>
+    <div class="about">
+      <div class="about__text" id="aboutText"></div>
+      <aside class="about__side">
+        <div class="panel">
+          <h3 class="panel__title" data-i18n="Skills">Skills</h3>
+          <div id="skills"></div>
+        </div>
+        <div class="panel">
+          <h3 class="panel__title" data-i18n="Languages">Languages</h3>
+          <ul class="langs" id="langs"></ul>
+        </div>
+        <div class="panel">
+          <h3 class="panel__title" data-i18n="Interests">Interests</h3>
+          <ul class="tags" id="interests"></ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== Files ===== -->
+  <section class="section" id="files">
+    <div class="section__head">
+      <h2 class="section__title" data-i18n="Files">Files</h2>
+      <p class="section__note" data-i18n="Anything I upload here — briefs, CV, source files.">Anything I upload here — briefs, CV, source files.</p>
+    </div>
+    <ul class="files" id="filesList">
+      <li class="empty" data-i18n="Loading…">Loading…</li>
+    </ul>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section section--dark" id="contact">
+    <h2 class="section__title section__title--dark" data-i18n="Say hello">Say hello</h2>
+    <div class="contact">
+      <a class="contact__row" id="cEmail" href="#">
+        <span class="contact__k" data-i18n="Email">Email</span>
+        <span class="contact__v" data-profile="email">chenjuncheng80@gmail.com</span>
+      </a>
+      <a class="contact__row" id="cPhone" href="#">
+        <span class="contact__k" data-i18n="Phone">Phone</span>
+        <span class="contact__v" data-profile="phone">(852) 9431 6413</span>
+      </a>
+      <div id="cLinks"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> <span data-profile="name">Chan Chun Shing</span> (<span data-profile="nameAlt">陳俊丞</span>).</p>
+  <p class="footer__sub"><a href="admin.html" data-i18n="Manage this site">Manage this site</a></p>
+</footer>
+
+<!-- ===== Lightbox ===== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" hidden>
+  <button class="lightbox__close" id="lbClose" type="button" aria-label="Close">×</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" type="button" aria-label="Previous">‹</button>
+  <button class="lightbox__nav lightbox__nav--next" id="lbNext" type="button" aria-label="Next">›</button>
+  <figure class="lightbox__figure">
+    <div class="lightbox__stage" id="lbStage"></div>
+    <figcaption>
+      <h3 id="lbTitle"></h3>
+      <p id="lbMeta"></p>
+      <p class="lightbox__desc" id="lbDesc"></p>
+      <a class="lightbox__link" id="lbLink" href="#" target="_blank" rel="noopener" hidden data-i18n="Open link">Open link</a>
+    </figcaption>
+  </figure>
+</div>
+
+<script src="js/i18n.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "categories": [
+    { "id": "photography", "label": "Photography" },
+    { "id": "video", "label": "Video Editing" },
+    { "id": "motion", "label": "Motion" },
+    { "id": "vfx", "label": "VFX" }
+  ],
+  "works": [
+    {
+      "id": "w-alley",
+      "title": "The Rhythm of Life in the Alley",
+      "category": "photography",
+      "year": "2025",
+      "desc": "Black and white study of a back alley in Sha Tin — laundry lines, air conditioners, and the geometry they make.",
+      "type": "image",
+      "src": "assets/works/alley.jpg",
+      "poster": "",
+      "link": "",
+      "featured": true
+    },
+    {
+      "id": "w-showreel",
+      "title": "Edit Showreel 2026",
+      "category": "video",
+      "year": "2026",
+      "desc": "A one-minute cut of my favourite sequences from the past year — pacing, sound, and transitions.",
+      "type": "video",
+      "src": "assets/works/showreel.mp4",
+      "poster": "assets/works/showreel.jpg",
+      "link": "",
+      "featured": true
+    },
+    {
+      "id": "w-motion",
+      "title": "Motion Study No.3",
+      "category": "motion",
+      "year": "2026",
+      "desc": "Type-in-motion exercise built in After Effects, exploring easing and overlap on a single word.",
+      "type": "video",
+      "src": "assets/works/motion.mp4",
+      "poster": "assets/works/motion.jpg",
+      "link": "",
+      "featured": true
+    },
+    {
+      "id": "w-vfx",
+      "title": "Compositing Test — Night Market",
+      "category": "vfx",
+      "year": "2026",
+      "desc": "Keying, tracking and lighting pass on a night market plate, adding practical haze and neon spill.",
+      "type": "image",
+      "src": "assets/works/vfx.jpg",
+      "poster": "",
+      "link": "",
+      "featured": true
+    }
+  ]
+}

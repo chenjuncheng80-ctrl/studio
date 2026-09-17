@@ -1,0 +1,31 @@
+{
+  "name": "Chan Chun Shing",
+  "nameAlt": "陳俊丞",
+  "role": "Digital Media Student & Street Photographer",
+  "tagline": "I make pictures and moving images about ordinary Hong Kong — alleys, shopfronts, and the people passing through them.",
+  "location": "Sha Tin, Hong Kong",
+  "available": "Available from 25 May 2026",
+  "email": "chenjuncheng80@gmail.com",
+  "phone": "(852) 9431 6413",
+  "about": [
+    "I'm a digital media student at HKDI (Hong Kong Design Institute), working across photography, video editing, motion design and visual effects.",
+    "Most of my personal work starts on the street. I like the unplanned frame — a 7-Eleven at 2am, someone waiting at a bus stop — and I try to keep that documentary instinct when I'm editing or compositing.",
+    "I'm comfortable end to end: shooting, cutting in Premiere, building motion in After Effects, and cleaning it up with generative tools when the shot calls for it."
+  ],
+  "links": [
+    { "label": "Instagram", "url": "https://www.instagram.com/" },
+    { "label": "Email", "url": "mailto:chenjuncheng80@gmail.com" }
+  ],
+  "skills": [
+    { "group": "Image", "items": ["Photography", "Retouching", "Colour grading", "Adobe Photoshop", "Adobe Firefly"] },
+    { "group": "Moving image", "items": ["Adobe Premiere Pro", "Adobe After Effects", "Motion graphics", "Compositing", "VFX"] },
+    { "group": "Other", "items": ["Unity", "Live stream production"] }
+  ],
+  "languages": [
+    { "name": "Cantonese", "level": "Native" },
+    { "name": "Mandarin", "level": "Fluent" },
+    { "name": "English", "level": "Fluent" }
+  ],
+  "interests": ["Photography", "Film", "Gaming"],
+  "resumeFile": "Chan-Chun-Shing-Resume.pdf"
+}
