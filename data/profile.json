@@ -13,19 +13,62 @@
     "I'm comfortable end to end: shooting, cutting in Premiere, building motion in After Effects, and cleaning it up with generative tools when the shot calls for it."
   ],
   "links": [
-    { "label": "Instagram", "url": "https://www.instagram.com/" },
-    { "label": "Email", "url": "mailto:chenjuncheng80@gmail.com" }
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:chenjuncheng80@gmail.com"
+    }
   ],
   "skills": [
-    { "group": "Image", "items": ["Photography", "Retouching", "Colour grading", "Adobe Photoshop", "Adobe Firefly"] },
-    { "group": "Moving image", "items": ["Adobe Premiere Pro", "Adobe After Effects", "Motion graphics", "Compositing", "VFX"] },
-    { "group": "Other", "items": ["Unity", "Live stream production"] }
+    {
+      "group": "Image",
+      "items": [
+        "Photography",
+        "Retouching",
+        "Colour grading",
+        "Adobe Photoshop",
+        "Adobe Firefly"
+      ]
+    },
+    {
+      "group": "Moving image",
+      "items": [
+        "Adobe Premiere Pro",
+        "Adobe After Effects",
+        "Motion graphics",
+        "Compositing",
+        "VFX"
+      ]
+    },
+    {
+      "group": "Other",
+      "items": [
+        "Unity",
+        "Live stream production"
+      ]
+    }
   ],
   "languages": [
-    { "name": "Cantonese", "level": "Native" },
-    { "name": "Mandarin", "level": "Fluent" },
-    { "name": "English", "level": "Fluent" }
+    {
+      "name": "Cantonese",
+      "level": "Native"
+    },
+    {
+      "name": "Mandarin",
+      "level": "Fluent"
+    },
+    {
+      "name": "English",
+      "level": "Fluent"
+    }
   ],
-  "interests": ["Photography", "Film", "Gaming"],
+  "interests": [
+    "Photography",
+    "Film",
+    "Gaming"
+  ],
   "resumeFile": "Chan-Chun-Shing-Resume.pdf"
 }

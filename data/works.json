@@ -1,9 +1,21 @@
 {
   "categories": [
-    { "id": "photography", "label": "Photography" },
-    { "id": "video", "label": "Video Editing" },
-    { "id": "motion", "label": "Motion" },
-    { "id": "vfx", "label": "VFX" }
+    {
+      "id": "photography",
+      "label": "Photography"
+    },
+    {
+      "id": "video",
+      "label": "Video Editing"
+    },
+    {
+      "id": "motion",
+      "label": "Motion"
+    },
+    {
+      "id": "vfx",
+      "label": "VFX"
+    }
   ],
   "works": [
     {
@@ -53,6 +65,17 @@
       "poster": "",
       "link": "",
       "featured": true
+    },
+    {
+      "id": "w-mu5txewd4ttn",
+      "title": "test",
+      "category": "photography",
+      "year": "2026",
+      "type": "image",
+      "desc": "",
+      "link": "",
+      "featured": false,
+      "src": "assets/works/1-2.jpeg"
     }
   ]
 }
